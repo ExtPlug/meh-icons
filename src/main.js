@@ -14,13 +14,13 @@ define(function (require, exports, module) {
       this._super();
       this.advice = around(UserRowView.prototype, 'vote', this.showVote);
       this.Style({
-        '#app .list .user .icon-meh': {
+        '#app .list .user i.icon-meh': {
           'top': '-1px',
           'right': '9px',
           'left': 'auto'
         },
         // grab icon next to a vote icon
-        '#app .list .user .icon + .icon-grab': {
+        '#app .list .user i.icon + i.icon-grab': {
           'right': '28px'
         }
       });
