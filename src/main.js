@@ -10,25 +10,24 @@ define(function (require, exports, module) {
     description: 'Shows meh icons in the user list next to users who meh\'d ' +
                  'the current song.',
 
+    style: {
+      '#app .list .user i.icon-meh': {
+        'top': '-1px',
+        'right': '9px',
+        'left': 'auto'
+      },
+      // grab icon next to a vote icon
+      '#app .list .user i.icon + i.icon-grab': {
+        'right': '28px'
+      }
+    },
+
     enable() {
-      this._super();
       this.advice = around(UserRowView.prototype, 'vote', this.showVote);
-      this.Style({
-        '#app .list .user i.icon-meh': {
-          'top': '-1px',
-          'right': '9px',
-          'left': 'auto'
-        },
-        // grab icon next to a vote icon
-        '#app .list .user i.icon + i.icon-grab': {
-          'right': '28px'
-        }
-      });
     },
 
     disable() {
       this.advice.remove();
-      this._super();
     },
 
     // bound to the UserRowView instance
