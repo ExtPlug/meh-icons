@@ -1,0 +1,11 @@
+#app .list .user {
+  & i.icon-meh {
+    top: -1px;
+    right: 9px;
+    left: auto;
+  }
+  /* grab icon next to a vote icon */
+  & i.icon + i.icon-grab {
+    right: 28px;
+  }
+}
