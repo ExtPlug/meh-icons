@@ -10,5 +10,8 @@
   },
   "scripts": {
     "build": "extplug bundle src/main.js build/meh-icons.js"
+  },
+  "dependencies": {
+    "defined": "^1.0.0"
   }
 }
