@@ -5,11 +5,15 @@
   "license": "MIT",
   "author": "Renée Kooi <renee@kooi.me>",
   "main": "build/meh-icons.js",
+  "keywords": [
+    "extplug-plugin"
+  ],
   "devDependencies": {
     "extplug-cli": "^1.0.0"
   },
   "scripts": {
-    "build": "extplug bundle src/main.js build/meh-icons.js"
+    "build": "extplug bundle src/main.js build/meh-icons.js",
+    "prepublish": "npm run build -- --minify"
   },
   "dependencies": {
     "defined": "^1.0.0"
