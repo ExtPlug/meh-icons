@@ -1,6 +1,8 @@
 Meh Icons
 =========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/extplug/meh-icons.svg)](https://greenkeeper.io/)
+
 ExtPlug plugin that shows meh icons in the user list, in addition to the usual
 grab and woot icons.
 
